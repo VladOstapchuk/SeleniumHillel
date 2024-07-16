@@ -1,5 +1,6 @@
 package com.the_internet_HW16;
 
+import com.the_internet_HW17.BaseTest;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -15,7 +16,7 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 
 
-public class TestLoginPageCase1 {
+public class TestLoginPageCase1 extends BaseTest {
     private WebDriver driver;
     private WebDriverWait wait;
 
