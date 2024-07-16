@@ -45,6 +45,7 @@ public class TestLoginPageCase2 {
         Assert.assertTrue(redflash.getText().contains("Your password is invalid!"), "Text is not correct!");
     }
 
+
     @AfterClass
     public void closeDive(){
         driver.quit();

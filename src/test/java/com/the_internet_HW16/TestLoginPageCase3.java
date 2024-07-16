@@ -45,6 +45,7 @@ public class TestLoginPageCase3 {
         Assert.assertTrue(redflash.getText().contains("Your username is invalid!"), "Text is not correct!");
     }
 
+
     @AfterClass
     public void closeDive(){
         driver.quit();

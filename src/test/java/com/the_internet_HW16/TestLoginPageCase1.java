@@ -27,7 +27,6 @@ public class TestLoginPageCase1 extends BaseTest {
         driver.manage().window().maximize();
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
-
     @Test
     public void testLoginPageCase1() {
         //відкрити сторінку з цією URL
