@@ -1,4 +1,4 @@
-package com.the_internet_HW16;
+package comm.the_internet_HW16;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;

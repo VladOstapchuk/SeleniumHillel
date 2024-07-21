@@ -1,8 +1,10 @@
-package org.com.the_internet_herokuap.driver_manager;
+package org.com.driver_manager;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.time.Duration;
 
 import static java.util.concurrent.TimeUnit.SECONDS;
 
@@ -18,8 +20,8 @@ public class DriverManager {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
             driver.manage().window().maximize();
-            driver.manage().timeouts().implicitlyWait(10,SECONDS);
-            driver.manage().timeouts().pageLoadTimeout(30, SECONDS);
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+            driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
         }
         return driver;
     }

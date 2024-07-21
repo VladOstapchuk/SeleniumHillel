@@ -1,6 +1,7 @@
-package com.the_internet_HW17;
+package comm.the_internet_HW17;
 
-import org.com.the_internet_herokuap.page_object.BasePage;
+import comm.BaseTest;
+import org.com.BasePage;
 import org.com.the_internet_herokuap.page_object.Home;
 import org.testng.annotations.Test;
 
