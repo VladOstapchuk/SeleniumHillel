@@ -21,10 +21,7 @@ public class Home extends BasePage {
 //_____________________________________________________________________________________________________
 
     //перехід на посилання з переліку, що є на сторінці
-    public Login clickOnLink(String name) {
+    public void clickOnLink(String name) {
         driver.findElement(btnOnLoginPage(name)).click();
-        return new Login(driver);
     }
-
-
 }

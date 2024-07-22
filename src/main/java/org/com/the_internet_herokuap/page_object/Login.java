@@ -11,7 +11,7 @@ import org.testng.Assert;
 import java.time.Duration;
 
 //page url = https://the-internet.herokuapp.com/login
-public class Login extends BasePage {
+public class Login extends BasePage{
     public Login(WebDriver driver) {
         super(driver);
     }

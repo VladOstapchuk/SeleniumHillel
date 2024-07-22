@@ -3,6 +3,7 @@ package comm.the_internet_HW17;
 import comm.BaseTest;
 import org.com.BasePage;
 import org.com.the_internet_herokuap.page_object.Home;
+import org.com.the_internet_herokuap.page_object.Login;
 import org.testng.annotations.Test;
 
 public class TestLoginForm extends BaseTest {
@@ -13,7 +14,8 @@ public class TestLoginForm extends BaseTest {
         //відкрити сторінку з цією URL
         new BasePage(driver).openURL("https://the-internet.herokuapp.com");
         new Home(driver)
-                .clickOnLink("login")
+                .clickOnLink("login");
+        new Login(driver)
                 .checkTitlePageText()
                 .usernameInput("tomsmith")
                 .passwordInput("SuperSecretPassword!")
@@ -29,7 +31,8 @@ public class TestLoginForm extends BaseTest {
         //відкрити сторінку з цією URL
         new BasePage(driver).openURL("https://the-internet.herokuapp.com");
         new Home(driver)
-                .clickOnLink("login")
+                .clickOnLink("login");
+        new Login(driver)
                 .checkTitlePageText()
                 .usernameInput("tomsmith")
                 .clickWrongSubmitButton()
@@ -42,7 +45,8 @@ public class TestLoginForm extends BaseTest {
         //відкрити сторінку з цією URL
         new BasePage(driver).openURL("https://the-internet.herokuapp.com");
         new Home(driver)
-                .clickOnLink("login")
+                .clickOnLink("login");
+        new Login(driver)
                 .checkTitlePageText()
                 .passwordInput("SuperSecretPassword!")
                 .clickWrongSubmitButton()

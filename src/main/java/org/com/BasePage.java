@@ -10,6 +10,8 @@ import org.openqa.selenium.support.PageFactory;
         PageFactory.initElements(driver, this);
     }
 
+
+
     public void openURL(String url){
         driver.get(url);
     }
